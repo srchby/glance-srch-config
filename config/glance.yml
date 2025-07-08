@@ -1,0 +1,18 @@
+server:
+  assets-path: /app/assets
+
+theme:
+  background-color: 220 16 22
+  contrast-multiplier: 1.2
+  primary-color: 193 43 67
+  positive-color: 92 28 65
+  negative-color: 354 42 56
+  # Note: assets are cached by the browser, changes to the CSS file
+  # will not be reflected until the browser cache is cleared (Ctrl+F5)
+  disable-picker: true  
+  custom-css-file: /assets/user.css
+
+pages:
+  # It's not necessary to create a new file for each page and include it, you can simply
+  # put its contents here, though multiple pages are easier to manage when separated
+  - $include: home.yml

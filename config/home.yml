@@ -1,0 +1,51 @@
+- name: Home
+  hide-desktop-navigation: true
+  head-widgets:
+    - type: search
+      search-engine: http://localhost:8080/search?q={QUERY}
+  columns:
+    - size: small
+      widgets:
+        - type: clock
+          hour-format: 24h
+        - type: weather
+          location: Recife, Brazil
+          units: metric # alternatively "imperial"
+          hour-format: 24h # alternatively "24h"
+          hide-location: true
+        - type: calendar
+          first-day-of-week: monday
+  
+    - size: full
+      widgets:           
+        - type: rss
+          title: News
+          style: detailed-list
+          feeds: 
+            - url: https://api.feedless.org/f/03f448b1-0ca7-4849-a167-5f5e11a6b95c/atom?skey=imGwwTRQ4J
+              title: Revista Oeste - Mundo
+            - url: https://api.feedless.org/f/6d716c61-3239-4669-9f9b-04b3ce6c9c66/atom?skey=8ChGGV0HoM
+              title: Revista Oeste - Política
+            - url: https://api.feedless.org/f/667c836e-1918-486e-8c19-8cacf7c03361/atom?skey=C0Qe455xVd
+              title: IstoÉ
+            - url: https://www.france24.com/en/rss
+              title: France24
+            - url: https://feeds.nbcnews.com/nbcnews/public/news
+              title: NBC News
+    - size: small
+      widgets:
+        - type: videos
+          style: vertical-list
+          channels:
+            - UCoyaV0pDQQV7QD94hG8z54A # Pax Tube
+            - UC-lHJZR3Gqxm24_Vd_AJ5Yw # Pewdiepie 
+            - UCfJN9ob8XWpvfLiD_uif0Lw # Semydeus
+            - UC8oMvYlwaS7m5VpMwOTvgzw # Tor's Cabinet  
+            - UC2eYFnH61tmytImy1mTYvhA # Luke Smith
+            - UCOB9xpxcEnVXaqxZCsz4AwQ # Ato e Potência 
+            - UCkKGsds494gTxpML_xLlCMg # Takumi Enferrujado
+            - UC7YOGHUfC1Tb6E4pudI9STA # Mental Outlaw
+            - UCLTM64y2HhloAD9BHCNYJLQ # Nostal_Gi
+            - UCTL0AARZAOSvs0xlQhvRuTQ # Elementar
+            - UC8gI55yBt_e1RswGHLDCV3Q # Gnose Games
+            - UCrx2zrPjhGRi9TwszZiLwEg # Horses
